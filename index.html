@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode | Курсы программирования Алматы | Coding school</title>
+    <link rel="stylesheet" href="css/style.css">    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=60d9ce57-c059-4dfe-b791-2e0b8f65fb5f&lang=ru_RU" type="text/javascript">
+    </script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="section_container">
+            <nav class="nav">
+                <div class="header_menu">
+                    <a href="#test" class="header_menu-link">Пробный урок</a>
+                    <a href="#works" class="header_menu-link">Работы учеников</a>
+                    <a href="#contacts" class="header_menu-link">Контакты</a>
+                </div>
+                <a href="index.html" id="link"><img src="img/navigation/headerlogo.svg" alt="header__logo" class="header__logo"></a>
+                <img src="img/menu-4-16.png" class="menu_bar" id="menu_bar" onclick="return openMenu()">
+                <div class="header__nav">
+                    <a onclick="sendGoal('instagram', 'click', 'all')" href="https://www.instagram.com/decode.kz/" target="_blank"><img src="img/navigation/instagram.svg" alt="instagram" class="instagram-icon"></a>
+                    <a onclick="sendGoal('whatsapp', 'click', 'site')" href="https://api.whatsapp.com/send/?phone=77476257175&amp;text=Здравствуйте, мы хотим на пробный урок)&amp;app_absent=0" target="_blank"><img src="img/navigation/whatsapp.svg" alt="whatsapp" class="whatsapp-icon"></a>
+                    <a onclick="sendGoal('telegram', 'click', 'all')" href="http://t.me/anvar_senalov" target="_blank"><img src="img/navigation/telegram.svg" alt="telegram" class="telegram-icon"></a>
+                    <a onclick="sendGoal('youtube', 'click', 'all')" href="https://www.youtube.com/channel/UCNJ1Yvv3Bb12rMeXuCX_mSg" target="_blank"><img src="img/navigation/youtube.svg" alt="youtube" class="youtube-icon"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="section_container">
+                <div class="main-wrapper">
+                    <div class="main_left-text">
+                        <p class="main-title">DECODE ШКОЛА ПРОГРАММИРОВАНИЯ</p>
+                        <p class="main-heading">ВАш ребёнок создаст<br> свой первый сайт с нуля <br><span>за 60 минут</span></p>
+                        <p class="main-desc">на бесплатном пробном уроке</p>
+                        <div class="main-buttons">
+                            <button class="main-btn" onclick="return openModal()">Записаться</button>
+                            <a href="#details">
+                                <div class="main-details" >
+                                    <div class="play-wr"><img src="img/main/play.svg" alt="playbtn" class="main-play-btn"></div>
+                                    <p class="details-txt">Узнать подробнее</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_right">
+                        <img src="img/main/Frame 84.png" alt="" class="main_right-bg">
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="trial" id="test">
+            <div class="section_container" id="details">
+                <div class="trial-video-side">
+                    <iframe width="520" height="300" src="https://www.youtube.com/embed/1QSKOZg7h6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="trial-desc">Узнайте за 1 минуту!</p>
+                </div>
+                <div class="trial-text">
+                    <p class="trial-title">Что вас ждёт на бесплатном<br> пробном уроке</p>
+                    <p class="trial-info">Мы изучили все самые востребованные технологии в IT-отрасли РК и собрали это в один универсальный курс, который  состоит из 5 модулей - равноценных 1 году работы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="section_container">
+                <p class="benefits-title">Преимущества<br> бесплатного пробного урока</p>
+                <div class="benefits-wrapper">
+                    <div class="benefits_left-side">
+                        <div class="benefits_first">
+                            <span class="benefits-num">1</span>
+                            <p class="benefits-heading">Ребенок создаст<br>свой первый сайт за 1 час<br><span class="benefits-description"> вместе с детьми, которые тоже интересуются программированием</span></p>
+                        </div>
+                        <div class="benefits_second">
+                            <p class="benefits-num">2</p>
+                            <p class="benefits-heading">Индивидуальный подход к каждому ученику.<br><span class="benefits-description"> Ваш ребёнок не останется без внимания преподавателя</span></p>
+                        </div>
+                    </div>
+                    <img src="img/benefits/classmates-working-together233233 1.png" alt="classmates are working together" class="benefits-bg">
+                    <div class="benefits_right-side">
+                        <div class="benefits_third">
+                            <span class="benefits-num">3</span>
+                            <p class="benefits-heading">Обратная связь<br> и нескучная теория, <br><span class="benefits-description"> которую можно сразу применить на практике</span></p>
+                        </div>
+                        <div class="benefits_fourth">
+                            <p class="benefits-num">4</p>
+                            <p class="benefits-heading">Освоите базовые навыки <br> и знания программиста<br><span class="benefits-description"> онлайн в любое удобное время с опытным преподавателем</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reasons">
+            <div class="section_container">
+                <p class="reasons-title">Зачем нужно изучать программирование с<br> раннего возраста</p>
+                <div class="reasons-text">
+                    <div class="reasons-card">
+                        <img src="img/reasons/money.svg" alt="money" class="reasons-card_img">
+                        <p class="reasons-info">Позволит работать в IT-сфере с высокой зарплатой</p>
+                    </div>
+                    <div class="reasons-card">
+                        <img src="img/reasons/book.svg" alt="book" class="reasons-card_img">
+                        <p class="reasons-info">Позволит работать в IT-сфере с высокой зарплатой</p>
+                    </div>
+                    <div class="reasons-card">
+                        <img src="img/reasons/puzzle.svg" alt="puzzle" class="reasons-card_img">
+                        <p class="reasons-info">Позволит работать в IT-сфере с высокой зарплатой</p>
+                    </div>
+                </div>
+                <img src="img/reasons/linereason.png" alt="line" class="line_reasons_1">
+                <img src="img/reasons/plane.svg" alt="line" class="line_reasons_2">
+                <img src="img/reasons/medium-shot-kid-taking-notes4334 1.png" alt="boy" class="reasons-bg">
+            </div>
+        </section>
+        <section class="fears">
+                <div class="fears-text">
+                    <div class="fears-text-title">Боитесь, что у ребёнка<br>
+                        <span>НЕ ПОЛУЧИТСЯ?</span></div>
+                    <p class="fears-text-heading">Для этого мы сделали:</p>
+                    <ul class="fears-list">
+                        <li class="fears-list-item">пробное занятие бесплатным;</li>
+                        <li class="fears-list-item">используем интерактивные курсы для<br> новичков;</li>
+                        <li class="fears-list-item">За 1 час вы сможете создать свой сайт с<br> нуля</li>
+                    </ul>
+                    <div class="fears-button-wr" onclick="return openModal()">
+                        <button class='button-fears btn-click' >Записаться</button>
+                        <p class="fears-txt">Попробовать бесплатно</p>
+                    </div>
+                    <img src="img/fears/line.svg" alt="line" class="line-fears">
+                </div>
+                <img src="img/fears/girlfear.png" alt="girl" class="girl-fear-bg">
+        </section>
+        <section class="fears-mob">
+                <div class="fears-text">
+                    <div class="fears-text-title">Боитесь, что у ребёнка<br>
+                        <span>НЕ ПОЛУЧИТСЯ?</span></div>
+                       <img src="img/fears-mob/boybg.png" alt="" class="fears-mob-bg">
+                    <div class="fears-info">
+                        <div class="fears-info_text">
+                            <p class="fears-text-heading">Для этого мы сделали:</p>
+                            <p class="fears-text-list">- пробное занятие бесплатным;</p>
+                            <p class="fears-text-list">- используем интерактивные курсы<br>для новичков;</p>
+                            <p class="fears-text-list-last">- За 1 час вы сможете создать свой<br>сайт с нуля</p>
+                            <a href="#link"><button class='btn'>Запишитесь сейчас<br>и попробуйте бесплатно</button></a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+        <section class="process">
+            <div class="section_container">
+                <p class="process-title">Как проходит обучение</p>
+                <div class="process-wr">
+                    <div class="process-card">
+                        <img src="img/process/open-book.svg" alt="book">
+                        <p class="process-heading">ЗАНЯТИЯ ОНЛАЙН</p>
+                        <p class="process-description">Все уроки проходят в комфортной<br>домашней обстановке и вы не тратите время на дорогу</p>
+                    </div>
+                    <div class="process-card">
+                        <img src="img/process/feedback.svg" alt="feedback">
+                        <p class="process-heading">ОБРАТНАЯ СВЯЗЬ</p>
+                        <p class="process-description">Если у вас возникнут вопросы, вы можете написать нам в любое<br>время суток</p>
+                    </div>
+                    <div class="process-card">
+                        <img src="img/process/time.svg" alt="time">
+                        <p class="process-heading">УДОБНЫЙ ГРАФИК</p>
+                        <p class="process-description">Подберем самый оптимальный<br> график обучения и в удобном для<br> Вас темпе</p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="choose">
+            <div class="choose-wr">
+                <img src="img/choose/bgboys.svg" alt="boy" class="choose-bg">
+                <div class="choose-text">
+                    <p class="choose-title">Почему мы?</p>
+                    <div class="choose-text-adaptive">
+                    <div class="choose-text-item">
+                        <span class="item_1"></span>
+                        <p class="choose-text-info">Разработанная нами методика<br>основана на многолетнем опыте<br>лучших практикующих специалистов</p>
+                    </div>
+                    <div class="choose-text-item">
+                        <span class="item_2"></span>
+                        <p class="choose-text-info">Мы  обучили более 5000 студентов</p>
+                    </div>
+                    <div class="choose-text-item">
+                        <span class="item_3"></span>
+                        <p class="choose-text-info">Багаж знаний наших методистов<br>и кураторов ежемесячно пополняется<br>актуальной информацией</p>
+                    </div>
+                    <div class="choose-text-item">
+                        <span class="item_4"></span>
+                        <p class="choose-text-info">Опытные преподаватели, которые<br>любят общаться и найдут подход<br>к любому ученику</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>    
+        <section class="video_container" id="works">
+            <div class="section_container">
+                <p class="video_container-title">Работы наших учеников</p>
+                <div class="video-row">
+                    <div class="video-row-frame">
+                        <iframe width="323" height="182" src="https://www.youtube.com/embed/9levn6vQ7FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="video-row-heading">Абдулкаримов Рашид</p>
+                        <p class="video-row-description">курс веб-разработки с нуля</p>
+                        <p class="video-row-city">г. Алматы</p>
+                    </div>
+                    <div class="video-row-frame">
+                        <iframe width="323" height="182" src="https://www.youtube.com/embed/nn0NI0IYJJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        <p class="video-row-heading">Алиева Гульнур</p>
+                        <p class="video-row-description">курс веб-разработки с нуля</p>
+                        <p class="video-row-city">г. Нур-Султан</p>
+                    </div>
+                    <div class="video-row-frame">
+                        <iframe width="323" height="182" src="https://www.youtube.com/embed/6ReWF_rbYHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        <p class="video-row-heading">Калиев Ернур</p>
+                        <p class="video-row-description">курс веб-разработки с нуля</p>
+                        <p class="video-row-city">г. Алматы</p>
+                    </div>
+                    <div class="video-row-frame">
+                        <iframe width="323" height="182" src="https://www.youtube.com/embed/9levn6vQ7FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="video-row-heading">Абдулкаримов Рашид</p>
+                        <p class="video-row-description">курс веб-разработки с нуля</p>
+                        <p class="video-row-city">г. Алматы</p>
+                    </div>
+                    <div class="video-row-frame">
+                        <iframe width="323" height="182" src="https://www.youtube.com/embed/nn0NI0IYJJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        <p class="video-row-heading">Абдулкаримов Рашид</p>
+                        <p class="video-row-description">курс веб-разработки с нуля</p>
+                        <p class="video-row-city">г. Алматы</p>
+                    </div>
+                    <div class="video-row-frame">
+                        <iframe width="323" height="182" src="https://www.youtube.com/embed/6ReWF_rbYHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        <p class="video-row-heading">Абдулкаримов Рашид</p>
+                        <p class="video-row-description">курс веб-разработки с нуля</p>
+                        <p class="video-row-city">г. Алматы</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+ 
+        <section class="sign_up">
+            <div class="section_container">
+                <div class="sign-up-wr">
+                    <p class="sign_up-title">Записаться на бесплатный урок</p>
+                    <form class='sign_up-form'>
+                        <input type="text" placeholder="Ваше имя" class="name">
+                        <input type="text" placeholder="Номер телефона" class="phone">
+                        <button type='button'class="sign_up-btn btn-click"  onclick="return openFeedBackSign()">Хочу в decode!</button>
+                    </form>
+                    <p class="sign_up-description">Ваши данные никаким образом не будут переданы третьим лицам.</p>
+                </div>
+                </div>
+        </section>  
+        <section class="contacts" id="contacts">
+                <div class="contacts_text">
+                    <p class="contacts-title">Контакты</p>
+                    <div class="contacts-item">
+                        <img src="img/contacts/location.svg" alt="" class="contacts-img">
+                        <p class='contacts-address contacts-item-text'>г. Алматы, Абая проспект,<br> 52в, 512 офис</span>
+                    </div>
+                    <div class="contacts-item">
+                        <img src="img/contacts/whatsapp.svg" alt="" class="contacts-img">
+                        <a onclick="sendGoal('whatsapp', 'click', 'site')" href="https://api.whatsapp.com/send/?phone=77476257175&amp;text=Здравствуйте, мы хотим на пробный урок)&amp;app_absent=0" target="_blank" class="contacts-number  contacts-item-text">+7 (747) 625 71 75</a>
+                    </div>
+                    <div class="contacts-item">
+                        <img src="img/contacts/gmail.svg" alt="" class="contacts-img">
+                        <a href="mailto:decode.school@gmail.com" class="conctact-gmail  contacts-item-text">decode.school@gmail.com</a>
+                    </div>
+                </div>
+                <div id="map" class="map">
+                </div>
+        </section>
+        </div>
+        </main>
+        <footer>
+            <div class="section_container">
+                <div class="footer-wrapper">
+                    <div class="footer-logo">
+                        <a href="index.html" id="link"><img src="img/footer/logo whitedecode.svg" alt="footer-logo" class='footer-logo-bg'></a>
+                        <img src="img/footer/adaptivebg.svg" alt="logo" class="adaptive-logo">
+                        <p>©Все права защищены.</p>
+                    </div>
+                    <div class="footer-requisites">
+                        <p><a href="#">РЕКВИЗИТЫ<br>СПРАВКА ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ</a> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <aside class="aside" id="aside">
+            <div class="aside-backdrop" id="aside-backdrop" onclick="return closeMenu()"></div>
+                <div class="aside-inner">
+                    <div class="aside-close"><p onclick="return closeMenu()">Закрыть X</p></div>
+                    <div class="aside__nav">
+                        <a onclick="sendGoal('instagram', 'click', 'all')" href="https://www.instagram.com/decode.kz/" target="_blank"><img src="img/navigation/instagram.png" alt="instagram" class="instagram-icon"></a>
+                        <a onclick="sendGoal('whatsapp', 'click', 'site')" href="https://api.whatsapp.com/send/?phone=77476257175&amp;text=Здравствуйте, мы хотим на пробный урок)&amp;app_absent=0" target="_blank"><img src="img/navigation/whatsapp.png" alt="whatsapp" class="whatsapp-icon"></a>
+                        <a onclick="sendGoal('telegram', 'click', 'all')" href="http://t.me/anvar_senalov" target="_blank"><img src="img/navigation/telegram.png" alt="telegram" class="telegram-icon"></a>
+                        <a onclick="sendGoal('youtube', 'click', 'all')" href="https://www.youtube.com/channel/UCNJ1Yvv3Bb12rMeXuCX_mSg" target="_blank"><img src="img/navigation/youtube.png" alt="youtube" class="youtube-icon"></a>
+                    </div>
+                    <div class="aside-inner-wr">
+                        <div class="aside_menu">
+                            <a href="#test" class="header_menu-link">Пробный урок</a>
+                            <a href="#works" class="header_menu-link">Работы учеников</a>
+                            <a href="#contacts" class="header_menu-link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+        </aside>
+        <div class="modal" id="modal">
+            <div class="modal-backdrop" id='modal-backdrop' onclick="return closeModal()"></div>
+            <div class="modal-inner">
+                <div class="modal-top">Записаться на бесплатный урок</div>
+                <form class="modal_form">
+                    <input type="text" placeholder="Ваше имя" class="modal_name" required>
+                    <input type="text" placeholder="Номер телефона" class="modal_phone" required>
+                    <button type='button'class="modal_button btn-click" onclick="return openFeedBack()">Хочу в decode!</button>
+                </form>
+                <p class="modal-description">Ваши данные никаким образом не будут переданы третьим лицам.</p>
+            </div>
+        </div>
+        <div class="modal-feedback" id="modal-feedback">
+            <div class="modal-feedback-backdrop" id='modal-feedback-backdrop' onclick="return closeFeedback()"></div>
+            <div class="modal-feedback-inner">
+                <div class="modal-feedback-top">Ваша заявка принята!</div>
+                <div class="modal-feedback-wr">
+                    <p class="modal-feedback-txt">Наши менеджеры свяжутся с вами в ближайщее время</p>
+                    <button class='modal-feedback-button' onclick="return closeFeedback()">Ок</button>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>   
+</body>
+</html>
